@@ -73,9 +73,8 @@ const onTextSelected = (event:MouseEvent) => {
 }
 
 const onSelectionRemove = (event) => {
-    console.log('keycode',event)
     if(event.which != 3){
-        if (bookmarkBtn.style.display == 'block' && event.target.id !== 'bookmarkBtn' && event.target.id !== 'bkIcon') {
+        if (bookmarkBtn.classList.contains('show') && event.target.id !== 'bookmarkBtn' && event.target.id !== 'bkIcon') {
             bookmarkBtn.classList.remove('show')
             window.getSelection().empty();
         }
