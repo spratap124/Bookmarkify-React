@@ -1,4 +1,80 @@
-div {
-  color: sandybrown;
-  background: lightcyan;
+.bookmarkBtn {
+  display: none;
+  background-color: #fbd94e;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #ccc;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 99999;
+}
+
+.bookmarkIcon{
+  width:8px;
+  height:8px;
+  background: #f35c5c;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.bookmarkIcon:after{
+  content:'';
+  width:0;
+  height:0;
+  border: 4px solid #f35c5c;
+  border-bottom-color: transparent;
+  position: absolute;
+  bottom:-8px;
+  left: 0;
+}
+
+.show {
+  display: block;
+}
+
+#bookmarkBar {
+  display: block;
+  clear: both;
+  padding: 100px 2px;
+  width: 10px;
+  height: 100vh;
+  position: fixed;
+  right: 5px;
+  top: 0;
+  background-color: #b7d6f7;
+  z-index: 9999999999;
+  opacity: 0.5;
+}
+
+#bookmarkBar:hover {
+  opacity: 1;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  position: relative;
+  left: -1px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.hide{
+  display: none !important;
 }
